@@ -1,0 +1,7 @@
+Dependencies u should have for testNG Framework
+
+1.testNG
+2.Selenium
+3.Apache
+4.Webdriver manager
+5.CommonsIO
