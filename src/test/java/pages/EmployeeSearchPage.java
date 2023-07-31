@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.CommonMethods;
 
+import java.util.List;
+
 public class EmployeeSearchPage extends CommonMethods {
 
     //this is object repository
@@ -25,6 +27,9 @@ public class EmployeeSearchPage extends CommonMethods {
 
     @FindBy(id = "searchBtn")
     public WebElement searchButton;
+
+    @FindBy(xpath = "//table[@id ='resultTable']/tbody/tr/td[2]")
+    public List<WebElement> rowData;
 
     public EmployeeSearchPage(){            //we created constructor because constructors has been automatically called when we create an object of a class
         PageFactory.initElements(driver,this);

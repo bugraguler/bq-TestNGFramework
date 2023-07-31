@@ -5,11 +5,11 @@
         <listener class-name="utils.Listeners"></listener>
     </listeners>
     <test verbose="2" preserve-order="true"
-          name="C:/Users/pcbel/IdeaProjects/TestNGFramework/src/test/java/test/AddEmployeeTest.java">
+          name="C:/Users/pcbel/IdeaProjects/TestNGFramework/src/test/java/test/EmployeeSearchTest.java">
         <classes>
-            <class name="test.AddEmployeeTest">
+            <class name="test.EmployeeSearchTest">
                 <methods>
-                    <include name="addMultipleEmployee"/>
+                    <include name="employeeSearchByID"/>
                 </methods>
             </class>
         </classes>
