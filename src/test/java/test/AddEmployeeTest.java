@@ -10,9 +10,8 @@ public class AddEmployeeTest extends CommonMethods {
 
     @Test
     public void addEmployee() {
-        sendText(loginPage.userNameBox, ConfigReader.getPropertyValue("username"));
-        sendText(loginPage.passwordBox,ConfigReader.getPropertyValue("password"));
-        click(loginPage.loginBtn);
+
+        loginPage.loginMethod(ConfigReader.getPropertyValue("username"),ConfigReader.getPropertyValue("password"));
 
     }
 

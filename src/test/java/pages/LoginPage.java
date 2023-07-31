@@ -26,4 +26,11 @@ public class LoginPage extends CommonMethods {
     public LoginPage() {    //page factory interfaceini kullanmadan yukarıdaki locatorları diğer yerlerde kullanamayız!!!!!!!
         PageFactory.initElements(driver,this);
     }
+
+    public void loginMethod(String username,String password){
+        sendText(userNameBox,username);
+        sendText(passwordBox,password);
+        click(loginBtn);
+
+    }
 }
