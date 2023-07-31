@@ -55,6 +55,23 @@
             <version>7.4.0</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
+
+    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M6</version>
+                <configuration>
+                   <suiteXmlFiles>
+                        <include>addEmployeeTest.xml</include>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
 </project>
